@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>hbd mila</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background">
+    <div class="birthday-card">
+        <audio id="bg-music" autoplay loop>
+  <source src="somebody pleasure speed up_1749401673_musicaldown.com.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">🔊 Musik</button>
+
+<script>
+  const music = document.getElementById('bg-music');
+  let isPlaying = true;
+
+  function toggleMusic() {
+    if (isPlaying) {
+      music.pause();
+      isPlaying = false;
+    } else {
+      music.play();
+      isPlaying = true;
+    }
+  }
+</script>
+      <h1 class="animated-text">🎉 Selamat Ulang Tahun, Mila 🎂</h1>
+      <img src="mila.jpg" alt="Foto Orang" class="profile-img rotate">
+      <p class="animated-text">Semoga semua impianmu tercapai dan harimu penuh kebahagiaan</p>
+    </div>
+  </div>
+</body>
+</html>
